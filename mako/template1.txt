@@ -1,0 +1,28 @@
+% if x == 5:
+    abcd
+% endif
+
+% for a in arg:
+    ${a} ${arg[a]}
+% endfor
+
+<ul>
+% for a in ("one", "two", "three"):
+    <li>Item ${loop.index +1}: ${a}</li>
+% endfor
+</ul>
+
+here is a line that goes onto \
+another line.
+
+
+
+this is a template
+<%
+    k = 50
+    y = 60
+%>
+	${k}
+	${y}
+
+<%include file="foo.txt"/>
